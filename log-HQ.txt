@@ -1,0 +1,51 @@
+###########OUTPUT########### 
+ IP: 91.208.101.2 
+ 
+R1921-ZAGORJE#exit
+
+[Connection to 172.19.16.72 closed by foreign host]
+C4500-CORE-LJ#
+C4500-CORE-LJ# ssh -l nil 91.208.101.2
+CCCCCC
+
+
+Delavska Hranilnica d.d.
+
+
+
+
+
+
+Vsak dostop se belezi!! Vdor v sistem je kaznivo dejanje!!
+
+
+
+
+
+
+
+Password: 
+4351-INET-LJ#
+4351-INET-LJ#show clock
+14:17:59.144 CET Thu Nov 22 2018
+4351-INET-LJ#
+4351-INET-LJ#
+4351-INET-LJ# 
+
+###########OUTPUT########### 
+ IP: 192.168.98.50 
+ 
+4351-INET-LJ#exit
+
+[Connection to 91.208.101.2 closed by foreign host]
+C4500-CORE-LJ#
+C4500-CORE-LJ# ssh -l nil 192.168.98.50
+Password: 
+
+DH-DMZ#
+DH-DMZ#show clock
+14:18:03.136 CET Thu Nov 22 2018
+DH-DMZ#
+DH-DMZ#
+DH-DMZ# 
+
