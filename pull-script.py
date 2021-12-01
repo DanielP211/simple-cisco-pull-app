@@ -6,13 +6,6 @@ import re
 
 d1 = raw_input("Choose if you want to use a proxy to access your devices or no (A - Use proxy, B - Access devices directly) ")
 
-#print("Choose if you want to use a proxy to access your devices.")
-
-#response = None
-
-#while response not int {"A","B"}
-#    response = raw_input("Please enter yes or no: ")
-
 if (d1 == 'A' or d1 == 'a'):
 
     proxyIP = raw_input("Input proxy: ")
@@ -54,8 +47,6 @@ if (d1 == 'A' or d1 == 'a'):
         hostname = re.search(r'[a-zA-Z0-9-]+-BA',output_str)
         version = re.search(r'15.+[0-9].[0-9]+',output_str)
         SN = re.search(r'FCZ+[a-zA-Z0-9]+',output_str)
-#    if hostname == "":
-#	continue
         dash = '-' * 120
         print (dash)
         print ("|  HOSTNAME:  {}  |  VERSION:  {}  |   SN:   {}   |  DEVICE IP:  {}  |".format(hostname.group(0), version.group(0), SN.group(0), device))
@@ -104,8 +95,6 @@ for device in devices_REMOTE:
         hostname = re.search(r'[a-zA-Z0-9-]+-BA',output_str)
         version = re.search(r'15.+[0-9].[0-9]+',output_str)
         SN = re.search(r'FCZ+[a-zA-Z0-9]+',output_str)
-#    if hostname == "":
-#	continue
         dash = '-' * 120
         print (dash)
         print ("|  HOSTNAME:  {}  |  VERSION:  {}  |   SN:   {}   |  DEVICE IP:  {}  |".format(hostname.group(0), version.group(0), SN.group(0), device))
@@ -116,6 +105,5 @@ for device in devices_REMOTE:
         f1.close()
         f2.close()
         f3.close()
-
 else:
 	print("Wrong choice")
